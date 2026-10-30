@@ -1,11 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Eyes Have It: A Synthetic Reading</title>
-<meta name="description" content="A hermeneutic-computational reading of sight, the other senses and the performance of seeing in Ruskin Bond's short story The Eyes Have It.">
+<meta name="description" content="A hermeneutic-computational reading of sight, the other senses and the performance of seeing in Ruskin Bond's short story The Eyes Have It, by Simanta Nandi, IIT (ISM) Dhanbad.">
+<meta name="author" content="Simanta Nandi">
 <meta name="color-scheme" content="light dark">
+<meta property="og:title" content="The Eyes Have It: A Synthetic Reading">
+<meta property="og:description" content="Sight, the other senses and the performance of seeing in Ruskin Bond's short story.">
+<meta property="og:type" content="website">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&display=swap" rel="stylesheet">
@@ -13,10 +18,12 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310131c'/%3E%3Cellipse cx='16' cy='16' rx='11' ry='6.5' fill='none' stroke='%23e8b65a' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23e8b65a'/%3E%3C/svg%3E">
 <script>
   try { var t = localStorage.getItem("eyes-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  document.documentElement.classList.add("js");
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
 
 <nav class="topbar" aria-label="Sections">
   <a class="brand" href="#top">The Eyes Have It</a>
@@ -27,7 +34,8 @@
     <a href="#results">Results</a>
     <a href="#discussion">Discussion</a>
     <a href="#limitations">Limitations</a>
-    <a href="#references">References</a>
+    <a href="#cite">Cite</a>
+    <a href="#about">About</a>
   </div>
   <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
@@ -35,14 +43,29 @@
 </nav>
 
 <header class="hero" id="top">
+  <canvas class="motes" id="motes" aria-hidden="true"></canvas>
   <div class="hero-inner">
-    <h1 class="hero-title">
+    <h1 class="hero-title lamp-text">
       <span class="t-dim">The Eyes Have It</span>
       <span class="t-lit" aria-hidden="true">The Eyes Have It</span>
     </h1>
     <p class="hero-sub">A synthetic reading of sight, the other senses and the performance of seeing in Ruskin Bond's short story</p>
-    <p class="hero-by">Simanta Nandi, October 2026</p>
-    <p class="hero-hint" id="hero-hint">Move the light across the dark to read, as the narrator reads the world: <em>sensitive only to light and darkness</em>.</p>
+    <div class="hero-by">
+      <p class="by-name">Simanta Nandi</p>
+      <p class="by-aff">MA, Digital Humanities and Social Sciences<br>Indian Institute of Technology (ISM) Dhanbad</p>
+      <p class="by-date">October 2026</p>
+    </div>
+    <figure class="epigraph">
+      <blockquote class="lamp-text epi-quote">
+        <span class="t-dim">“sensitive only to light and darkness”</span>
+        <span class="t-lit" aria-hidden="true">“sensitive only to light and darkness”</span>
+      </blockquote>
+      <figcaption class="epi-hint" id="hero-hint">
+        <span class="lamp-dot" aria-hidden="true"></span>
+        <span class="hint-pointer">Move the light across the dark to read, as the narrator reads the world.</span>
+        <span class="hint-touch">Touch and drag to move the light, as the narrator reads the world.</span>
+      </figcaption>
+    </figure>
   </div>
   <div class="train train-hero" id="train-hero" role="img"
        aria-label="The story's 99 sentences drawn as the windows of a train in three carriages. The 21 lit windows are the sentences read before any interpretation."></div>
@@ -52,83 +75,83 @@
 <main id="main">
 
 <section id="abstract" class="block">
-  <h2>Abstract</h2>
-  <p>This project applies <em>synthetic reading</em> (Ghosh, Shanmugapriya T and Mandal, 2026), a computational literary method in which interpretation comes before computation, to Ruskin Bond's "The Eyes Have It". In the story, a blind young man shares a train compartment with a girl and tries to hide that he cannot see. Only at the end does he learn that she was blind too.</p>
-  <p>A partial reading of 21 of the story's <span data-k="meta.sentences">99</span> sentences produced the initial impression: two blind travellers perform sightedness for each other, while their real knowledge comes through the other senses. The impression was turned into a prompt with four dimensions: sight, the other senses, performance and imagination. A local language model, run through Ollama, extracted phrases along these dimensions, and every phrase was verified against the text. A researcher-annotated lexicon of <span data-k="meta.lexicon_items">95</span> phrases was then counted across 20 narrative segments, and the result was replicated with the model's own extraction.</p>
-  <p>The vocabulary of sight forms three clusters: the declaration of blindness, the revelation, and, largest of all, the narrator's pretence of seeing. Sight in this story is above all something the characters <em>say</em>. The other senses carry what the narrator actually knows of the girl, and imagination fills the stretches where sight is absent. Read through Goffman, Merleau-Ponty, Jay, Garland-Thomson and Mitchell and Snyder, these patterns suggest that the closing irony depends less on blindness than on the social performance of sight, and on the sighted reader's assumption that the girl could see.</p>
+  <h2 class="sweep">Abstract</h2>
+  <p>This project applies <em>Synthetic Reading</em>, a computational method of literary analysis developed by Ghosh, Shanmugapriya T and Mandal (2026) in which interpretation comes before computation, to Ruskin Bond's short story "The Eyes Have It". In the story, a young man who is blind shares a train compartment with a girl and takes great care not to reveal his blindness. Only after she has left does he learn, from another passenger, that she was blind as well.</p>
+  <p>The initial impression was formed after reading only part of the story, 21 of its <span data-k="meta.sentences">99</span> sentences: two blind travellers perform sightedness for each other, while their true knowledge comes through the senses other than sight. This impression was turned into a prompt with four dimensions: sight, the other senses (hearing, touch and smell), performance and imagination. A local language model, run through Ollama, extracted phrases along these dimensions, and each phrase was checked against the text. A researcher-annotated lexicon of <span data-k="meta.lexicon_items">95</span> phrases was then counted across 20 narrative segments, and the result was replicated using the model's own extraction.</p>
+  <p>The vocabulary of sight forms three clusters: the declaration of blindness, the revelation and, largest of all, the narrator's pretence of seeing. In this story, sight is above all something the characters <em>say</em>. The other senses convey what the narrator actually knows about the girl, and imagination fills the gaps where sight is missing. Read through Goffman, Merleau-Ponty, Jay, Garland-Thomson, and Mitchell and Snyder, these patterns suggest that the closing irony depends less on blindness than on the social performance of sight, and on the sighted reader's assumption that the girl could see.</p>
 </section>
 
 <section id="objectives" class="block">
-  <h2>Objectives</h2>
+  <h2 class="sweep">Objectives</h2>
   <ul class="plain">
-    <li>To apply the seven steps of synthetic reading to a short story in Indian English, keeping every interpretive decision human and documented.</li>
-    <li>To trace how the vocabulary of sight, of the other senses, of performance and of imagination is distributed across the narrative.</li>
-    <li>To test a falsifiable statement drawn from the partial reading, rather than to illustrate a conclusion already reached.</li>
-    <li>To confine the language model to extraction, verify every extracted phrase against the text, and replicate the main figure with the model's output alone.</li>
+    <li>To apply the seven steps of synthetic reading to a short story in Indian English, ensuring that every interpretive decision remains human and documented.</li>
+    <li>To map how the vocabulary of sight, the other senses, performance and imagination is distributed across the narrative.</li>
+    <li>To test a falsifiable statement derived from the partial reading, rather than to confirm a conclusion already reached.</li>
+    <li>To restrict the language model to extraction, check every phrase it extracts against the text, and replicate the main figure using the model's output alone.</li>
     <li>To interpret the patterns through disability studies, phenomenology and the cultural history of vision.</li>
   </ul>
 </section>
 
 <section id="questions" class="block">
-  <h2>Research questions</h2>
-  <p class="lead">How does "The Eyes Have It" distribute the vocabulary of sight, of the other senses, of performance and of imagination across its narrative? And does its closing irony depend on sight itself, or on the social performance of sight?</p>
+  <h2 class="sweep">Research questions</h2>
+  <p class="lead">How does "The Eyes Have It" distribute the vocabulary of sight, the other senses, performance and imagination across its narrative? Does its closing irony depend on sight itself, or on the social performance of sight?</p>
   <ol class="questions">
     <li>Where is the vocabulary of sight concentrated, and where is it absent?</li>
-    <li>Where does the narrator's knowledge of the girl come from: words of sight, or words of the other senses?</li>
-    <li>Does the vocabulary of performance coincide with the vocabulary of sight, so that sight appears as a performance?</li>
-    <li>What fills the narrative where sight is absent?</li>
+    <li>Does the narrator's knowledge of the girl come from words of sight or from words of the other senses?</li>
+    <li>Does the vocabulary of performance coincide with the vocabulary of sight, suggesting that sight is itself a performance?</li>
+    <li>Where there is no sight, what fills the narrative?</li>
   </ol>
-  <h3>Statement tested, written before the full reading</h3>
+  <h3>The statement tested, written before the full reading</h3>
   <dl class="statements">
-    <div><dt>S1</dt><dd>Sight vocabulary will cluster at the two ends of the story: the declaration of blindness and the closing revelation.</dd></div>
-    <div><dt>S2</dt><dd>The middle of the story will be dominated by the vocabulary of performance: the pretence at the window and the flattery.</dd></div>
-    <div><dt>S3</dt><dd>The narrator's knowledge of the girl will come through the other senses rather than through sight.</dd></div>
+    <div><dt>S1</dt><dd>Sight vocabulary will be concentrated at the beginning and end of the story: at the beginning with the announcement of blindness, and at the end with the revelation.</dd></div>
+    <div><dt>S2</dt><dd>In the middle of the story, the vocabulary of performance will dominate: the pretence at the window and the flattery.</dd></div>
+    <div><dt>S3</dt><dd>The narrator will learn about the girl through the other senses rather than through sight.</dd></div>
   </dl>
-  <p class="note">The statement would be falsified if sight vocabulary were spread evenly through the story, if performance vocabulary were absent from the middle, or if the other senses were absent where the narrator learns about the girl.</p>
+  <p class="note">The statement would be falsified if sight vocabulary were evenly distributed throughout the story, if performance vocabulary were absent from the middle, or if the other senses were absent where the narrator learns about the girl.</p>
 </section>
 
 <section id="text" class="block">
-  <h2>The story and the corpus</h2>
-  <p>A young man who is blind travels alone in a train compartment towards Dehra. At Rohana a girl gets in. Because he cannot see her, he learns about her through sound, and he decides not to let her discover that he is blind. They talk about the hills of Mussoorie, the landscape outside the window and her face. At Saharanpur she leaves, a new passenger enters, and the last lines change the meaning of everything before them.</p>
-  <p>The corpus was prepared from a web transcription of the story. Everything outside the story was removed: the site header, blog metadata, the author signature and all that follows it, an image caption, and empty lines. The text was <em>not</em> lower-cased, stemmed or stripped of stop words, because every extracted phrase is checked against the wording as published.</p>
+  <h2 class="sweep">The story and the corpus</h2>
+  <p>A blind young man is travelling alone towards Dehra in a train compartment. At Rohana, a girl gets in. Unable to see her, he learns about her through sound, and he does not want her to know that he cannot see. They talk about the hills of Mussoorie, the countryside outside the window and her face. She leaves at Saharanpur, a new passenger enters, and the last lines change the meaning of everything before them.</p>
+  <p>The corpus was prepared from a web transcription of the story. Everything on the page except the story itself was removed: the site header, the blog metadata, an image caption, the author's signature and everything that follows it, and empty lines. The text was <em>not</em> lower-cased, stemmed or stripped of stop words, because every extracted phrase is checked against the wording of the text as published.</p>
   <dl class="facts">
-    <div><dt>Paragraphs</dt><dd data-k="corpus.paragraphs">40</dd></div>
-    <div><dt>Sentences</dt><dd data-k="meta.sentences">99</dd></div>
-    <div><dt>Words, approximately</dt><dd data-k="corpus.words">1,130</dd></div>
-    <div><dt>Lines of page noise removed</dt><dd data-k="corpus.noise_total">122</dd></div>
+    <div><dt>Paragraphs</dt><dd class="count" data-k="corpus.paragraphs">40</dd></div>
+    <div><dt>Sentences</dt><dd class="count" data-k="meta.sentences">99</dd></div>
+    <div><dt>Words, approximately</dt><dd class="count" data-k="corpus.words">1,130</dd></div>
+    <div><dt>Lines of page noise removed</dt><dd class="count" data-k="corpus.noise_total">122</dd></div>
   </dl>
-  <p class="note">"The Eyes Have It" is © Ruskin Bond and was first collected in <em>The Night Train at Deoli and Other Stories</em> (Penguin Books, 1988). The story is in copyright, so neither this site nor the repository reproduces it. Instead, the repository publishes the SHA-256 fingerprint of the cleaned text (<code class="hash" data-k="corpus.corpus_sha256_short">375813bd45f18774…</code>), so that anyone who prepares the corpus from the same source can confirm they hold the identical text. Short quotations appear below for the purposes of criticism.</p>
+  <p class="note">"The Eyes Have It" is © Ruskin Bond and was first collected in <em>The Night Train at Deoli and Other Stories</em> (Penguin Books, 1988). The story is in copyright, so neither this site nor the repository reproduces it. The repository does, however, publish the SHA-256 fingerprint of the cleaned text (<code class="hash" data-k="corpus.corpus_sha256_short">375813bd45f18774…</code>), so that anyone who prepares the corpus from the same source can verify that they hold the identical text. The short quotations below are reproduced for the purposes of criticism only.</p>
 </section>
 
 <section id="method" class="block">
-  <h2>Method</h2>
+  <h2 class="sweep">Method</h2>
   <p>Synthetic reading moves from a situated human impression to computation and back to interpretation. The seven steps followed here are those of the reference study, carried out in a single Google Colab notebook.</p>
-  <ol class="steps">
-    <li><h3>Partial reading</h3><p>The 99 sentences were divided into three equal parts, and 20% of each part was read: the first seven sentences, seven chosen at random from the middle (seed 42), and the last seven.</p></li>
-    <li><h3>Initial impression</h3><p>The impression, the research question, the conditions that would falsify the statement, and a positionality statement were written before the full story was read closely.</p></li>
-    <li><h3>Text upload</h3><p>The cleaned story was numbered sentence by sentence and given to the language model in full.</p></li>
-    <li><h3>Query generation</h3><p>The prompt turns the impression into four dimensions and asks for verbatim phrases of 1–8 words, each with its sentence number, in a fixed JSON schema. Interpretation is explicitly excluded.</p></li>
-    <li><h3>Targeted extraction</h3><p>A local open-weight model, run through Ollama, extracted the phrases. Each phrase was checked against the story and against the sentence the model named. Then the researcher assigned the lexicon's phrases to three stages defined by the story's turning points.</p></li>
-    <li><h3>Computation and visualisation</h3><p>The phrases were counted across 20 equal narrative segments of 4–5 sentences each, with the longest match counted first, and drawn as eight figures. The analysis was repeated with 10 segments.</p></li>
-    <li><h3>Interpretation</h3><p>The patterns were read through literary and cultural theory and checked against a close reading of the full text.</p></li>
+  <ol class="steps" id="steps">
+    <li><h3>Partial reading</h3><p>The 99 sentences were divided into three equal parts of 33, and 20% of each part (seven sentences) was read: the first seven sentences, seven chosen at random from the middle (seed 42) and the last seven, making 21 in all.</p></li>
+    <li><h3>Initial impression</h3><p>Before the full story was read closely, the impression, the research question and the conditions that would falsify the statement were written down, along with a positionality statement.</p></li>
+    <li><h3>Text upload</h3><p>After cleaning, the complete story was numbered sentence by sentence and presented to the language model.</p></li>
+    <li><h3>Query generation</h3><p>The prompt turns the impression into four dimensions and asks for verbatim phrases of one to eight words in each dimension, each with its sentence number, in a fixed JSON schema. Interpretation is explicitly excluded.</p></li>
+    <li><h3>Targeted extraction</h3><p>The phrases were extracted by a local open-weight model run through Ollama. Every phrase was checked against the story and against the sentence the model identified. The researcher then assigned the phrases of the lexicon to three stages, according to the turning points of the story.</p></li>
+    <li><h3>Computation and visualisation</h3><p>The phrases were counted in each of 20 equal narrative segments of four to five sentences, with the longest match counted first, and the results were drawn as eight figures. The analysis was repeated with 10 segments.</p></li>
+    <li><h3>Interpretation</h3><p>The patterns were scrutinised through literary and cultural theory and cross-checked against a close reading of the full text.</p></li>
   </ol>
 </section>
 
 <section id="partial" class="block">
-  <h2>The partial reading</h2>
+  <h2 class="sweep">The partial reading</h2>
   <p>The story was read in three carriages of 33 sentences each. Hover over or focus on a window to see its sentence number. The lit windows are the 21 lines that produced the impression.</p>
   <div class="train train-large" id="train-large"></div>
   <div class="train-legend"><span class="key key-lit"></span> read before interpretation <span class="key key-dark"></span> not read until later</div>
   <p class="tip" id="train-tip" aria-live="polite">&nbsp;</p>
-  <h3>What the lines suggested</h3>
-  <p>The narrator names his blindness at once, as "totally blind", "sensitive only to light and darkness". His first knowledge of the girl is a sound: her slippers "slapped against her heels". In the middle he fears discovery ("Then I made a mistake"), "felt for the window ledge" and made "a pretence of studying the landscape". He compliments a face he cannot see. In the closing lines a sighted man says "It was her eyes I noticed, not her hair", and reveals that she was "completely blind". The impression that followed: two blind travellers each perform sightedness for the other, and the irony may rest on the performance of sight rather than on sight itself.</p>
+  <h3>What the lines imply</h3>
+  <p>Right away, the narrator names his blindness: he is "totally blind", "sensitive only to light and darkness". His first knowledge of the girl is a sound: her slippers "slapped against her heels". In the middle, he is afraid of being found out ("Then I made a mistake"), "felt for the window ledge" and made "a pretence of studying the landscape". He compliments a face he cannot see. At the end, a sighted man says, "It was her eyes I noticed, not her hair", and reveals that she was "completely blind". The impression that followed: each of the two blind travellers performs sightedness for the other, and the irony may lie in the performance of sight rather than in sight itself.</p>
   <h3>Positionality</h3>
-  <p>The researcher reads as a sighted student of literature in India. That fact matters most here: the story's twist is designed for sighted readers, who share the assumption it exposes. To guard against finding only what was expected, the falsification conditions were written in advance, every machine-extracted phrase was verified, and the researcher's lexicon was compared with the model's extraction.</p>
+  <p>The researcher reads as a sighted student of literature in India. This matters here: the story's twist is designed for sighted readers, who share the assumption it exposes. To avoid finding only what was expected, the conditions of falsification were set in advance, every phrase extracted by the machine was checked, and the researcher's lexicon was compared with the machine's extraction.</p>
 </section>
 
 <section id="prompt" class="block">
-  <h2>The prompt</h2>
-  <p>The numbered story follows this prompt when it is sent to the local model. It is the exact text used, with its SHA-256 hash recorded in the run log.</p>
+  <h2 class="sweep">The prompt</h2>
+  <p>When the prompt is sent to the local model, the numbered story follows it. This is the exact text used, and its SHA-256 hash is recorded in the run log.</p>
   <div class="prompt-wrap">
     <button class="copy" id="copy-prompt" type="button">Copy prompt</button>
     <pre class="prompt" id="prompt-text">Loading the prompt…</pre>
@@ -136,29 +159,30 @@
 </section>
 
 <section id="extraction" class="block">
-  <h2>Extraction and verification</h2>
+  <h2 class="sweep">Extraction and verification</h2>
   <div class="llm-empty" hidden>
     <p>The language-model extraction has not been run for this version of the site. Run Sections 5 and 6 of the notebook to fill in this section and Fig. 8.</p>
   </div>
   <div class="llm-ready" hidden>
-    <p>The local model <strong data-k="llm.run.model">model</strong> was run through <span data-k="llm.run.engine">Ollama</span>, in <span data-k="llm.run.chunks">3</span> chunks of consecutive sentences, at temperature <span data-k="llm.run.temperature">0</span> with seed 42.</p>
+    <p id="llm-run-desc"></p>
     <dl class="facts">
-      <div><dt>Phrases extracted</dt><dd data-k="llm.verification.items">0</dd></div>
-      <div><dt>Found verbatim in the story</dt><dd><span data-k="llm.verification.verbatim_pct">0</span>%</dd></div>
-      <div><dt>Found in the sentence the model named</dt><dd><span data-k="llm.verification.in_sentence_pct">0</span>%</dd></div>
-      <div><dt>Lexicon phrases the model also found</dt><dd><span data-k="llm.lexicon_coverage.covered_pct">0</span>%</dd></div>
+      <div><dt>Phrases extracted</dt><dd class="count" data-k="llm.verification.items">0</dd></div>
+      <div><dt>Found verbatim in the story</dt><dd><span class="count" data-k="llm.verification.verbatim_pct">0</span>%</dd></div>
+      <div><dt>Found in the sentence the model named</dt><dd><span class="count" data-k="llm.verification.in_sentence_pct">0</span>%</dd></div>
+      <div><dt>Lexicon phrases the model also found</dt><dd><span class="count" data-k="llm.lexicon_coverage.covered_pct">0</span>%</dd></div>
     </dl>
-    <p>Only verbatim phrases are used. Phrases that the model returned but that do not occur in the story are listed in <code>llm_verification.txt</code> and never counted.</p>
+    <p>Only phrases that match the text word for word are used. Phrases that the model returned but that do not appear in the text are listed in <code>llm_verification.txt</code> and are not counted.</p>
   </div>
   <h3>The researcher-annotated lexicon</h3>
-  <p>The figures count the <span data-k="meta.lexicon_items">95</span> phrases of <code>Theme_JSON.py</code>. Each phrase is placed in one of four dimensions and one of three stages, which follow the story's own turning points: <em>Encounter / Concealment</em> (sentences 1–35), <em>Performance of Sight</em> (36–67) and <em>Departure / Revelation</em> (68–99). Every phrase occurs verbatim in the story, and only within its own stage.</p>
+  <p>The figures count the <span data-k="meta.lexicon_items">95</span> phrases in <code>Theme_JSON.py</code>. Each phrase is assigned to one of four dimensions and one of three stages, which follow the turning points of the story: <em>Encounter / Concealment</em> (sentences 1–35), <em>Performance of Sight</em> (36–67) and <em>Departure / Revelation</em> (68–99). Every phrase occurs in the story exactly as written, and only within its own stage.</p>
 </section>
 
 <section id="results" class="block wide">
-  <h2>Results</h2>
-  <p class="lead-narrow">Every chart responds to the pointer: hover for exact counts. The switches redraw the first two charts with 10 segments instead of 20, and add the model's own extraction.</p>
+  <h2 class="sweep">Results</h2>
+  <p class="lead-narrow">All the charts respond to the pointer: hover over them for exact counts. The switches redraw the first two charts with 10 segments instead of 20 and add the model's own extraction.</p>
   <div class="controls" role="group" aria-label="Chart options">
     <div class="seg" role="radiogroup" aria-label="Number of segments">
+      <span class="seg-glide" aria-hidden="true"></span>
       <button type="button" role="radio" aria-checked="true" data-seg="20">20 segments</button>
       <button type="button" role="radio" aria-checked="false" data-seg="10">10 segments</button>
     </div>
@@ -181,31 +205,31 @@
   </figure>
 
   <h3>All figures</h3>
-  <p>The notebook draws each figure twice: as a JPG for the report and as an interactive HTML page. Select a figure to enlarge it.</p>
+  <p>The notebook draws each figure twice: as a JPG for the report and as an interactive HTML page. Select a figure to enlarge it, then use the arrow keys to move between figures.</p>
   <div class="gallery" id="gallery"></div>
 </section>
 
 <section id="discussion" class="block">
-  <h2>Discussion</h2>
+  <h2 class="sweep">Discussion</h2>
 
   <h3>The statement, tested</h3>
   <dl class="verdicts">
-    <div><dt>S1, partly supported</dt><dd>Sight clusters at the opening (segments 1–3) and at the end (17–20), but its largest cluster is in the middle (8–12), where the narrator is pretending to see.</dd></div>
-    <div><dt>S2, supported</dt><dd>Performance vocabulary peaks in segments 9–12, with 10 of its 21 hits, during the window scene and the flattery.</dd></div>
-    <div><dt>S3, supported</dt><dd>The other senses dominate where the narrator learns about the girl: her slippers and voice at the start, and her voice, perfume and hair at the parting (segments 13–17).</dd></div>
+    <div class="partly"><dt><span class="badge">Partly supported</span> S1</dt><dd>Sight clusters at the beginning (segments 1–3) and at the end (17–20), but the most prominent cluster is in the middle (8–12), where the narrator is pretending to see.</dd></div>
+    <div><dt><span class="badge">Supported</span> S2</dt><dd>Performance vocabulary peaks in segments 9–12, the window scene and the flattery, which hold 10 of its 21 hits.</dd></div>
+    <div><dt><span class="badge">Supported</span> S3</dt><dd>The other senses prevail where the narrator learns about the girl: when she arrives (segments 2–4) and again as she leaves (segments 13–17), from her slippers at the beginning to her voice, perfume and hair at the end.</dd></div>
   </dl>
 
-  <h3>Sight as a spoken performance</h3>
-  <p>The middle cluster of sight vocabulary coincides with the peak of performance vocabulary. In "The Eyes Have It", sight is above all something the characters say. The narrator asks what it is like outside, is told to "look out of the window", makes "a pretence of studying the landscape", and compliments "an interesting face". Goffman's account of <em>passing</em> describes this exactly. A person with a discreditable stigma manages information so that others will not discover it, and conversation is where the management happens. Martin Jay's history of ocularcentrism explains why the disguise works: where knowing is equated with seeing, speaking the vocabulary of sight is enough to pass as sighted. The last line shows that the girl was passing too, so the middle of the story is a conversation between two performances.</p>
+  <h3>Sight as an oral performance</h3>
+  <p>The middle cluster of sight vocabulary coincides closely with the peak of performance vocabulary. In "The Eyes Have It", sight is above all something the characters say. The narrator asks what it is like outside, is told to "look out of the window", makes "a pretence of studying the landscape" and compliments "an interesting face". This is exactly what Goffman describes as <em>passing</em>: a person with a discreditable stigma controls information so that others will not discover it, and conversation is where that control takes place. Read in the context of Martin Jay's history of ocularcentrism, in which knowing is equated with seeing, the disguise makes sense: anyone who speaks the language of sight can pass as sighted. The last line reveals that the girl was passing too, so the middle of the story is a conversation between two performances.</p>
 
   <h3>Knowledge through the other senses</h3>
-  <p>The balance chart shows where knowledge actually comes from. It turns positive whenever the narrator is learning rather than performing: her slippers, the window ledge under his hand, a voice with "the sparkle of a mountain stream", "the perfume from her hair". For Merleau-Ponty, perception is embodied and multisensory, and his blind man's stick, which becomes part of the body, has its counterpart in the hand on the window ledge. Georgina Kleege's critique of sighted assumptions applies too. The narrator's knowledge of the girl is rich and intimate, and it lacks only what a sighted culture counts as knowledge: how she looks.</p>
+  <p>The balance chart shows where knowledge comes from. It turns positive whenever the narrator is learning rather than performing: her slippers, the window ledge under his hand, a voice with "the sparkle of a mountain stream", "the perfume from her hair". For Merleau-Ponty, perception is embodied, and the blind man's stick becomes part of his body; the hand on the window ledge is its counterpart here. Georgina Kleege's critique of sighted assumptions applies as well. The narrator knows the girl well: her voice, her laugh, her scent, her presence. What he does not know is how she looks, which is precisely what a sighted culture counts as knowledge.</p>
 
-  <h3>Imagination in the gaps</h3>
-  <p>Fourteen of the 22 imagination hits (64%) fall in the nine segments that contain no sight vocabulary at all, which make up 45% of the story. Two scenes carry most of them. The hills of Mussoorie are recalled "calling on my memories", with wild dahlias and a log fire: memory standing in for present sight, so that he can join a sighted conversation about scenery. Then he wonders about her hair, worn in a bun or loose over her shoulders: imagination standing in for sight in desire. In this story the mind's eye does the work the eyes cannot.</p>
+  <h3>Gaps filled by imagination</h3>
+  <p>Fourteen of the 22 imagination hits (64%) fall in the nine segments that contain no sight vocabulary at all, which make up 45% of the story. Two scenes carry most of them. First, the hills of Mussoorie are recalled "calling on my memories", with wild dahlias and a log fire: memory stands in for present sight, so that he can join a sighted conversation about the scenery. Then he wonders whether she wears her hair in a bun or loose over her shoulders: imagination takes the place of sight in desire. In this story, the mind's eye does the work the eyes cannot.</p>
 
   <h3>The revelation and the sighted reader</h3>
-  <p>The final segment is the most purely visual moment of the story: five sight phrases and no other sense at all. It belongs to the only sighted character, and his sight is partial too: "It was her eyes I noticed, not her hair". The twist works only because the reader, like the narrator, has assumed all along that the girl could see. Garland-Thomson calls this unmarked default body the <em>normate</em>. "Didn't you notice?" is addressed to the narrator but reaches the reader. Mitchell and Snyder's idea of <em>narrative prosthesis</em> raises a fair objection: the story uses the girl's blindness as the device of its surprise, and so risks treating disability as a punchline. Yet the vocabulary shows that the surprise exposes sighted assumptions rather than blind deficiency. The blind travellers knew each other's voices and presence better than the sighted man knew the girl.</p>
+  <p>The final segment is the most purely visual moment of the story: five sight phrases and no other sense at all. It belongs to the only sighted character, and his sight is partial too: "It was her eyes I noticed, not her hair". You too, as a reader, have probably assumed all along that the girl could see; otherwise the twist would not work. Garland-Thomson calls this default, unmarked body the <em>normate</em>. "Didn't you notice?" is asked by the sighted passenger, but it is meant for the reader. Mitchell and Snyder's notion of <em>narrative prosthesis</em> raises a reasonable critique: the story may use the girl's disability as a punchline. Yet the surprise exposes the reader's unspoken sighted assumptions rather than any deficiency in the blind characters. The blind travellers knew each other's voices and presence better than the sighted man knew the girl.</p>
 
   <h3>A gaze without sight</h3>
   <p>Read with Laura Mulvey's account of the gaze, the flattery scene shows the narrator performing a gaze he cannot exercise. He compliments her face, and offers "Few girls can resist flattery" as a sighted man's commonplace. The girl declines the script ("I'm tired of people telling me I have a pretty face") even as she performs her own sightedness. Here the gaze is a social script that both characters speak, which supports the finding that sight in this story is performance.</p>
@@ -217,25 +241,25 @@
 </section>
 
 <section id="limitations" class="block">
-  <h2>Limitations</h2>
+  <h2 class="sweep">Limitations</h2>
   <ul class="plain">
     <li><strong>Small numbers.</strong> With 99 sentences, most cells hold between 0 and 5 hits. The figures are patterns that provoke interpretation, in Stephen Ramsay's sense of algorithmic criticism. They are not statistical evidence.</li>
-    <li><strong>Circular stages.</strong> The stages follow the story's turning points, so the stage figures illustrate the reading. The test rests on the stage-independent dimension counts, and on their replication with the model's extraction.</li>
-    <li><strong>An interpretive lexicon.</strong> The boundaries between dimensions are judgements. "Faced the girl" is coded as sight, but it is also performance. The lexicon was drafted with AI assistance from a close reading and checked against the verified extraction.</li>
+    <li><strong>Circular stages.</strong> The stages follow the story's turning points, so the stage figures illustrate the reading. The test rests on the stage-independent dimension counts and on their replication with the model's extraction.</li>
+    <li><strong>An interpretive lexicon.</strong> The boundaries between dimensions are judgements. "Faced the girl" is coded as sight, but it is also performance. The lexicon was drafted from a close reading and checked against the verified extraction.</li>
     <li><strong>The source.</strong> The corpus is a web transcription, not the print edition, and it contains a few punctuation slips. These are recorded, not corrected. They do not affect the phrase counts, but citations should refer to the printed text.</li>
-    <li><strong>What counting cannot see.</strong> Tone, irony, and the timing of a twist are invisible to frequency counts. Close reading has to supply them.</li>
+    <li><strong>What counting cannot see.</strong> Tone, irony and the timing of a twist are invisible to frequency counts. Close reading has to supply them.</li>
     <li><strong>One model, one run.</strong> Another model or run may extract different phrases, which is why every phrase is verified and the comparison with the lexicon is published.</li>
     <li><strong>Positionality.</strong> A sighted reader may under-read what a blind reader would notice first.</li>
   </ul>
 </section>
 
 <section id="conclusion" class="block">
-  <h2>Conclusion</h2>
-  <p>Synthetic reading made it possible to move from a 21-line impression to a tested claim about the whole story, while keeping the interpretation human-led and every machine step verifiable. The figures confirmed that performance dominates the middle of the story and that the other senses carry what the narrator knows. They also showed what the impression had not anticipated: sight is most present exactly where it is being faked, and imagination fills the places sight leaves empty. "The Eyes Have It" stages sight less as a faculty than as a language. Its last question, "Didn't you notice?", is finally addressed to the reader who never thought to doubt that the girl could see.</p>
+  <h2 class="sweep">Conclusion</h2>
+  <p>Synthetic reading made it possible to move from a 21-line impression to a tested claim about the whole story, while keeping the interpretation human-led and every machine step verifiable. The figures confirmed that performance dominates the middle of the story and that the other senses carry what the narrator knows. They also showed what the impression had not anticipated: sight is most present exactly where it is being faked, and imagination fills the places that sight leaves empty. "The Eyes Have It" stages sight less as a faculty than as a language. Its last question, "Didn't you notice?", is finally addressed to the reader who never thought to doubt that the girl could see.</p>
 </section>
 
 <section id="reproduce" class="block">
-  <h2>Reproduce the study</h2>
+  <h2 class="sweep">Reproduce the study</h2>
   <p>Everything on this page comes from one Google Colab notebook in the project repository. The notebook does all of the following:</p>
   <ul class="plain">
     <li>prepares the corpus from the source page;</li>
@@ -252,8 +276,49 @@
   <p class="note">Generated <span data-k="meta.generated_at_human">—</span> from <code>Theme_JSON.py</code>, <code>prompt.txt</code> and the verified extraction. The story text itself is kept out of the repository for copyright reasons. Run <code>prepare_corpus.py</code> to recreate it, and compare its SHA-256 fingerprint.</p>
 </section>
 
+<section id="cite" class="block">
+  <h2 class="sweep">Cite this project</h2>
+  <p>Choose a style and copy the reference. The web address and the date of access are filled in automatically.</p>
+  <div class="cite-tabs" role="tablist" aria-label="Citation style">
+    <button type="button" role="tab" aria-selected="true" data-style="mla">MLA 9</button>
+    <button type="button" role="tab" aria-selected="false" data-style="apa">APA 7</button>
+    <button type="button" role="tab" aria-selected="false" data-style="chicago">Chicago 17</button>
+    <button type="button" role="tab" aria-selected="false" data-style="harvard">Harvard</button>
+    <button type="button" role="tab" aria-selected="false" data-style="ieee">IEEE</button>
+    <button type="button" role="tab" aria-selected="false" data-style="bibtex">BibTeX</button>
+  </div>
+  <div class="cite-box" role="tabpanel">
+    <div class="cite-text" id="cite-text" aria-live="polite"></div>
+    <button class="copy cite-copy" id="cite-copy" type="button">Copy citation</button>
+  </div>
+  <p class="note">This project is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International Licence</a>. You may share and adapt it for non-commercial purposes, provided you credit the author and indicate any changes.</p>
+</section>
+
+<section id="about" class="block">
+  <h2 class="sweep">About the researcher</h2>
+  <div class="bio">
+    <div class="portrait" id="portrait">
+      <img src="assets/simanta-nandi.jpg" alt="Portrait of Simanta Nandi" width="280" height="280" loading="lazy">
+    </div>
+    <div class="bio-text">
+      <p class="bio-name">Simanta Nandi</p>
+      <p class="bio-aff">MA, Digital Humanities and Social Sciences<br>Indian Institute of Technology (ISM) Dhanbad</p>
+      <p>Simanta is an MA student in Digital Humanities and Social Sciences at IIT (ISM) Dhanbad. He completed the Summer Research Internship Programme 2026 at IIST Thiruvananthapuram, working on preserving cultural narratives, and holds a BA in Comparative Literature from Jadavpur University via CENTIL. He has taken part in the 15-day UNESCO World Heritage Education Programme at Visva-Bharati and in a British Library archival digitisation workshop run with ILSR. His article "Impact of Popular Culture and Media on Literary Reception in the Northeast of India" appears in <em>Re-imagining Northeast Writing and Narratives: Language, Culture and Border Identities</em> (Jamia Millia Islamia, 2024). His research interests span Digital Archiving, Cultural Heritage, AI for the Humanities, Electronic Literature and Digital Memory Studies. He was recognised by Oxford University Press India in 2021.</p>
+      <p class="bio-links">
+        <a class="pill" href="https://about.me/simantanandi" target="_blank" rel="noopener">about.me/simantanandi</a>
+        <a class="pill" href="mailto:25ma0013@iitism.ac.in">25ma0013@iitism.ac.in</a>
+      </p>
+    </div>
+  </div>
+  <h3>Project supervision</h3>
+  <ul class="supervisors">
+    <li><a href="https://shanmugapriya.com/" target="_blank" rel="noopener">Shanmugapriya T</a></li>
+    <li><a href="https://linktr.ee/sourav.dh.litcult" target="_blank" rel="noopener">Sourav Ghosh</a></li>
+  </ul>
+</section>
+
 <section id="references" class="block">
-  <h2>References</h2>
+  <h2 class="sweep">References</h2>
   <ul class="refs">
     <li>Bond, Ruskin. "The Eyes Have It." <em>The Night Train at Deoli and Other Stories</em>, Penguin Books, 1988.</li>
     <li>Garland-Thomson, Rosemarie. <em>Extraordinary Bodies: Figuring Physical Disability in American Culture and Literature</em>. Columbia UP, 1997.</li>
@@ -271,13 +336,34 @@
 </main>
 
 <footer class="footer">
-  <p>A major project in literary and cultural studies by Simanta Nandi, 2026. "The Eyes Have It" © Ruskin Bond; it is quoted here briefly for criticism and is not reproduced.</p>
-  <p>The language model was used only for extraction, and every extracted phrase was verified against the text. AI assistance was also used to write the code and this site and to draft the text; the research design and the interpretation are the researcher's.</p>
+  <div class="footer-inner">
+    <p class="foot-title">The Eyes Have It: A Synthetic Reading</p>
+    <p>Simanta Nandi, MA, Digital Humanities and Social Sciences, Indian Institute of Technology (ISM) Dhanbad. Supervised by <a href="https://shanmugapriya.com/" target="_blank" rel="noopener">Shanmugapriya T</a> and <a href="https://linktr.ee/sourav.dh.litcult" target="_blank" rel="noopener">Sourav Ghosh</a>.</p>
+    <p><a href="https://about.me/simantanandi" target="_blank" rel="noopener">about.me/simantanandi</a> <span class="sep" aria-hidden="true"></span> <a href="mailto:25ma0013@iitism.ac.in">25ma0013@iitism.ac.in</a></p>
+    <p class="licence">
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license" class="cc" aria-label="Creative Commons Attribution-NonCommercial 4.0 International Licence">
+        <svg viewBox="0 0 88 31" width="88" height="31" aria-hidden="true"><rect x="0.5" y="0.5" width="87" height="30" rx="4" fill="none" stroke="currentColor"/><circle cx="15.5" cy="15.5" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="15.5" y="19.6" text-anchor="middle" font-size="10.5" font-family="Georgia, serif" font-weight="700" fill="currentColor">cc</text><text x="33" y="19.8" font-size="11" font-family="Georgia, serif" fill="currentColor">BY-NC 4.0</text></svg>
+      </a>
+      <span>© 2026 Simanta Nandi. Except where otherwise noted, this project is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International Licence</a>.</span>
+    </p>
+    <p class="small">"The Eyes Have It" © Ruskin Bond is not covered by this licence; it is quoted briefly for the purposes of criticism and is not reproduced.</p>
+  </div>
 </footer>
 
+<button class="to-top" id="to-top" type="button" aria-label="Back to the top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l-7 7h4.5v7h5v-7H19z" fill="currentColor"/></svg>
+</button>
+
 <dialog class="lightbox" id="lightbox" aria-label="Enlarged figure">
-  <form method="dialog"><button class="lb-close" type="submit" aria-label="Close the figure">Close</button></form>
-  <img id="lb-img" alt="">
+  <div class="lb-bar">
+    <span class="lb-count" id="lb-count"></span>
+    <form method="dialog"><button class="lb-close" type="submit" aria-label="Close the figure">Close</button></form>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-nav lb-prev" id="lb-prev" type="button" aria-label="Previous figure">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-nav lb-next" id="lb-next" type="button" aria-label="Next figure">›</button>
+  </div>
   <p class="lb-caption" id="lb-caption"></p>
   <p class="lb-links"><a id="lb-html" href="#" target="_blank" rel="noopener">Open the interactive version</a><a id="lb-jpg" href="#" download>Download the JPG</a></p>
 </dialog>
