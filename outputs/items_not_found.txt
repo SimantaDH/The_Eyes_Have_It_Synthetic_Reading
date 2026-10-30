@@ -1,0 +1,2 @@
+Lexicon phrases that never occur verbatim in the story:
+  (none)

@@ -1,0 +1,39 @@
+{
+  "title": "The Eyes Have It",
+  "author": "Ruskin Bond",
+  "source_url": "https://gauravsk98.wordpress.com/2018/02/14/the-eyes-have-it-by-ruskin-bond/",
+  "corpus_file": "corpus_the_eyes_have_it.txt",
+  "source_file": "source_the_eyes_have_it.html",
+  "stages": {
+    "I": "Encounter / Concealment",
+    "II": "Performance of Sight",
+    "III": "Departure / Revelation"
+  },
+  "dimensions": {
+    "Sight": "SIGHT",
+    "Senses": "OTHER SENSES",
+    "Performance": "PERFORMANCE",
+    "Imagination": "IMAGINATION"
+  },
+  "segments": 20,
+  "stage_sentences": {
+    "I": [
+      1,
+      35
+    ],
+    "II": [
+      36,
+      67
+    ],
+    "III": [
+      68,
+      99
+    ]
+  },
+  "llm_dimension_map": {
+    "sight": "Sight",
+    "other_senses": "Senses",
+    "performance": "Performance",
+    "imagination": "Imagination"
+  }
+}

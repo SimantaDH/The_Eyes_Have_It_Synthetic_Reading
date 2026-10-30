@@ -1,0 +1,25 @@
+{
+  "model": "qwen2.5:7b",
+  "engine": "Ollama on a local GPU",
+  "chunks": 3,
+  "chunk_ranges": [
+    [
+      1,
+      33
+    ],
+    [
+      34,
+      66
+    ],
+    [
+      67,
+      99
+    ]
+  ],
+  "temperature": 0.0,
+  "seed": 42,
+  "num_ctx": 8192,
+  "num_predict": 4096,
+  "run_at": "2026-10-30T19:21:47",
+  "prompt_sha256": "e0feeae8b44052c989911ea6fa868c78cef9b39b7f0f1c89c0a888948cf2f224"
+}

@@ -1,0 +1,30 @@
+{
+  "items": 118,
+  "verbatim": 101,
+  "in_named_sentence": 98,
+  "verbatim_pct": 85.6,
+  "in_sentence_pct": 83.1,
+  "unique_verified_items": 98,
+  "per_dimension": {
+    "Sight": {
+      "items": 53,
+      "verbatim": 48,
+      "in_sentence": 47
+    },
+    "Senses": {
+      "items": 13,
+      "verbatim": 11,
+      "in_sentence": 10
+    },
+    "Performance": {
+      "items": 24,
+      "verbatim": 18,
+      "in_sentence": 17
+    },
+    "Imagination": {
+      "items": 28,
+      "verbatim": 24,
+      "in_sentence": 24
+    }
+  }
+}

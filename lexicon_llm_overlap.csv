@@ -1,0 +1,96 @@
+stage,dimension,phrase,extracted_by_llm
+I,Sight,totally blind,no
+I,Sight,sensitive only to light and darkness,partial
+I,Sight,what the girl looked like,partial
+I,Sight,her looks,no
+I,Sight,a dark corner,partial
+I,Sight,good eyesight,no
+I,Sight,fail to see,no
+I,Sight,people who cannot see,no
+I,Sight,see very little,no
+I,Sight,i didn't see you either,exact
+I,Senses,slapped against her heels,partial
+I,Senses,the sound of her voice,no
+I,Senses,the sound of her slippers,no
+I,Senses,my voice startled her,partial
+I,Senses,a little exclamation,no
+I,Senses,i heard you come in,exact
+I,Senses,their remaining senses,no
+I,Performance,prevent her from discovering,partial
+I,Performance,provided i keep to my seat,partial
+I,Performance,better not get too familiar,partial
+I,Performance,formidable creatures,partial
+I,Performance,a romantic fool,partial
+I,Performance,i made a mistake,no
+I,Imagination,perhaps i never would,no
+I,Imagination,i suppose,no
+I,Imagination,calling on my memories,no
+I,Imagination,covered with wild dahlias,partial
+I,Imagination,the sun is delicious,partial
+I,Imagination,a log fire,partial
+I,Imagination,quiet and almost deserted,partial
+I,Imagination,my words had touched her,partial
+II,Sight,what is it like outside,no
+II,Sight,i could not see,partial
+II,Sight,look out of the window,no
+II,Sight,studying the landscape,no
+II,Sight,do you see any animals,no
+II,Sight,an interesting face,partial
+II,Sight,a pretty face,no
+II,Sight,faced the girl,partial
+II,Senses,felt for the window ledge,partial
+II,Senses,the panting of the engine,partial
+II,Senses,the rumble of the wheels,partial
+II,Senses,"a clear, ringing laugh",partial
+II,Senses,listen to her talking,no
+II,Senses,her voice had the sparkle,no
+II,Senses,sat in silence,partial
+II,Performance,making a pretence,no
+II,Performance,i faced it,no
+II,Performance,i ventured,no
+II,Performance,quite confidently,no
+II,Performance,becoming quite daring,partial
+II,Performance,a safe remark,partial
+II,Performance,resist flattery,partial
+II,Performance,aloud i said,no
+II,Performance,a very gallant young man,partial
+II,Performance,try to laugh for her,no
+II,Imagination,in my mind's eye,partial
+II,Imagination,telegraph posts flashing by,partial
+II,Imagination,the trees seem to be moving,no
+II,Imagination,thought i,no
+II,Imagination,a mountain stream,no
+II,Imagination,forget our brief encounter,no
+II,Imagination,it would stay with me,partial
+III,Sight,the world was shut out,partial
+III,Sight,staring into the daylight,partial
+III,Sight,darkness for me,partial
+III,Sight,outside the window,partial
+III,Sight,her eyes i noticed,no
+III,Sight,beautiful eyes,partial
+III,Sight,of no use to her,partial
+III,Sight,completely blind,partial
+III,Sight,didn't you notice,exact
+III,Senses,the engine's whistle shrieked,no
+III,Senses,their sound and rhythm,no
+III,Senses,the shouting of porters and vendors,exact
+III,Senses,a high-pitched female voice,exact
+III,Senses,the perfume from her hair,exact
+III,Senses,touch her hair,partial
+III,Senses,the scent of perfume,exact
+III,Senses,stammered an apology,partial
+III,Senses,the door banged,partial
+III,Senses,the wheels took up their song,partial
+III,Senses,groaned and shook,partial
+III,Performance,a game to play,partial
+III,Performance,a new fellow traveller,partial
+III,Performance,a fascinating game,partial
+III,Performance,you must be disappointed,partial
+III,Performance,an interesting girl,partial
+III,Imagination,i wondered if she wore her hair,partial
+III,Imagination,hanging loose over her shoulders,partial
+III,Imagination,cut very short,partial
+III,Imagination,that voice must have belonged,partial
+III,Imagination,guessing what went on out there,partial
+III,Imagination,my reverie,partial
+III,Imagination,long or short,no

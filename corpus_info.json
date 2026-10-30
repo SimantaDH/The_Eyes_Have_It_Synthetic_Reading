@@ -1,0 +1,22 @@
+{
+  "title": "The Eyes Have It",
+  "author": "Ruskin Bond",
+  "source": "https://gauravsk98.wordpress.com/2018/02/14/the-eyes-have-it-by-ruskin-bond/",
+  "prepared_at": "2026-10-30T19:15:36",
+  "paragraphs": 40,
+  "words": 1130,
+  "corpus_sha256": "375813bd45f1877460407da395735933da48d6bf42e8da9d53a1c6929abbceb4",
+  "noise_removed": {
+    "image_lines_removed": [],
+    "lines_before_story": 0,
+    "lines_after_story": 7
+  },
+  "quotation_mark_issues_not_corrected": [
+    "‘Are you going all the way to Dehra? I asked.",
+    "I must have been sitting in a dark corner because my voice s…",
+    "I didn’t see you either,’ I said. ‘But I heard you come in.’",
+    "I wondered if I would be able to prevent her from discoverin…",
+    "‘I don’t remember,’ he said sounding puzzled. ‘It was her ey…"
+  ],
+  "note": "The story is in copyright; the corpus is not redistributed. Recreate it with prepare_corpus.py and compare corpus_sha256."
+}

@@ -1,0 +1,119 @@
+dimension,llm_key,item,sentence,verbatim,in_sentence
+Sight,sight,I had the train compartment to myself up to Rohana,1,True,True
+Sight,sight,my eyes sensitive only to light and darkness,5,True,True
+Sight,sight,I was unable to tell what the girl looked like,5,True,True
+Sight,sight,I didn’t see you either,15,True,True
+Sight,sight,I didn’t see you either,17,True,False
+Sight,sight,"The girl said, I am getting off at Saharanpur",19,True,True
+Sight,sight,‘Where are you going? ’ she asked,23,False,False
+Sight,sight,I wondered if my words had touched her or whether she thought me a romantic fool.,34,True,True
+Sight,sight,Had she noticed already that I could not see?,38,True,True
+Sight,sight,I moved easily along the berth and felt for the window ledge.,41,True,True
+Sight,sight,"I heard the panting of the engine, the rumble of the wheels, and, in my mind’s eye I could see telegraph posts flashing by.",43,True,True
+Sight,sight,I knew that there were hardly any animals left in the forests near Dehra.,48,True,True
+Sight,sight,I turned from the window and faced the girl and for a while we sat in silence.,49,True,True
+Sight,sight,"‘You have an interesting face,’ I remarked.",50,True,True
+Sight,sight,I was becoming quite daring but it was a safe remark.,51,True,True
+Sight,sight,Few girls can resist flattery.,52,True,True
+Sight,sight,"She laughed pleasantly—a clear, ringing laugh.",53,True,True
+Sight,sight,‘It’s nice to be told I have an interesting face.,54,True,True
+Sight,sight,"‘You are a very gallant young man,’ she said.",58,True,True
+Sight,sight,"‘We’ll soon be at your station,’ I said.",61,True,True
+Sight,sight,‘Thank goodness it’s a short journey.,62,True,True
+Sight,sight,it would stay with me for the rest of the journey and for some time after,67,True,True
+Sight,sight,I wondered if she wore her hair in a bun or if it was plaited,69,True,True
+Sight,sight,Perhaps it was hanging loose over her shoulders,70,True,True
+Sight,sight,Or was it cut very short,71,True,True
+Sight,sight,The train drew slowly into the station,72,True,True
+Sight,sight,"Outside, there was the shouting of porters and vendors and a high-pitched female voice near the carriage door",73,True,True
+Sight,sight,That voice must have belonged to the girl’s aunt,74,True,True
+Sight,sight,"‘Goodbye,’ the girl said",75,True,True
+Sight,sight,She was standing very close to me,76,True,True
+Sight,sight,So close that the perfume from her hair was tantalizing,77,True,True
+Sight,sight,I wanted to raise my hand and touch her hair but she moved away,78,True,True
+Sight,sight,Only the scent of perfume still lingered where she had stood,79,True,True
+Sight,sight,There was some confusion in the doorway,80,True,True
+Sight,sight,"A man, getting into the compartment, stammered an apology",81,True,True
+Sight,sight,Then the door banged and the world was shut out again,82,True,True
+Sight,sight,I returned to my berth,83,True,True
+Sight,sight,The guard blew his whistle and we moved off,84,True,True
+Sight,sight,Once again I had a game to play and a new fellow traveller,85,True,True
+Sight,sight,"The train gathered speed, the wheels took up their song, the carriage groaned and shook",86,True,True
+Sight,sight,"I found the window and sat in front of it, staring into the daylight that was darkness for me",87,True,True
+Sight,sight,So many things were happening outside the window,88,True,True
+Sight,sight,It could be a fascinating game guessing what went on out there,89,True,True
+Sight,sight,The man who had entered the compartment broke into my reverie,90,True,True
+Sight,sight,‘You must be disappointed’ he said,91,True,True
+Sight,sight,"‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",92,False,False
+Sight,sight,‘She was an interesting girl’ I said,93,True,True
+Sight,sight,"‘Can you tell me—did she keep her hair long or short’, he asked",94,False,False
+Sight,sight,"‘I don’t remember’, he said sounding puzzled",95,False,False
+Sight,sight,"‘It was her eyes I noticed, not her hair', he said",96,False,False
+Sight,sight,She had beautiful eyes but they were of no use to her,97,True,True
+Sight,sight,She was completely blind,98,True,True
+Sight,sight,Didn’t you notice,99,True,True
+Senses,other_senses,"They seemed very anxious about her comfort and the woman gave the girl detailed instructions as to where to keep her things, when not to lean out of windows, and how to avoid speaking to strangers",3,True,True
+Senses,other_senses,I knew she wore slippers from the way they slapped against her heels,6,True,True
+Senses,other_senses,I must have been sitting in a dark corner because my voice startled her,10,True,True
+Senses,other_senses,I heard you come in,16,True,True
+Senses,other_senses,I love the hills,27,True,True
+Senses,other_senses,I wish I were going to Mussoorie,26,True,True
+Senses,other_senses,I love the hills,28,True,False
+Senses,other_senses,"‘What is it like outside?',",,False,False
+Senses,other_senses,sentence: 36},,False,False
+Senses,other_senses,the shouting of porters and vendors,73,True,True
+Senses,other_senses,a high-pitched female voice,73,True,True
+Senses,other_senses,the perfume from her hair,77,True,True
+Senses,other_senses,the scent of perfume,79,True,True
+Performance,performance,They called their goodbyes and the train pulled out of the station,4,True,True
+Performance,performance,I didn’t see you either,15,True,True
+Performance,performance,I didn’t see you either,17,True,False
+Performance,performance,"Provided I keep to my seat, I thought, it shouldn’t be too difficult",18,True,True
+Performance,performance,I had better not get too familiar,21,True,True
+Performance,performance,Aunts are usually formidable creatures,22,True,True
+Performance,performance,‘Where are you going? ’ she asked,23,False,False
+Performance,performance,"‘To Dehra and then to Mussoorie’, 'Yes, this is the best time,” I said, calling on my memories",24,False,False
+Performance,performance,"‘The hills are covered with wild dahlias, the sun is delicious, and at night you can sit in front of a log fire and drink a little brandy",30,True,True
+Performance,performance,Most of the tourists have gone and the roads are quiet and almost deserted,31,True,True
+Performance,performance,"‘Goodbye,’ the girl said",75,True,True
+Performance,performance,She was standing very close to me,76,True,True
+Performance,performance,I wanted to raise my hand and touch her hair but she moved away,78,True,True
+Performance,performance,Only the scent of perfume still lingered where she had stood,79,True,True
+Performance,performance,"A man, getting into the compartment, stammered an apology",81,True,True
+Performance,performance,‘You must be disappointed’ he said,91,True,True
+Performance,performance,"‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",92,False,False
+Performance,performance,‘She was an interesting girl’ I said,93,True,True
+Performance,performance,"‘Can you tell me—did she keep her hair long or short’, he asked",94,False,False
+Performance,performance,"‘I don’t remember’, he said sounding puzzled",95,False,False
+Performance,performance,"‘It was her eyes I noticed, not her hair', he said",96,False,False
+Performance,performance,She had beautiful eyes but they were of no use to her,97,True,True
+Performance,performance,She was completely blind,98,True,True
+Performance,performance,Didn’t you notice,99,True,True
+Imagination,imagination,I must have been sitting in a dark corner because my voice startled her,10,True,True
+Imagination,imagination,I wondered if I would be able to prevent her from discovering that I was blind,17,True,True
+Imagination,imagination,"‘The hills are covered with wild dahlias, the sun is delicious, and at night you can sit in front of a log fire and drink a little brandy",30,True,True
+Imagination,imagination,Most of the tourists have gone and the roads are quiet and almost deserted,31,True,True
+Imagination,imagination,"Yes, October is the best time",32,True,True
+Imagination,imagination,I wondered if she wore her hair in a bun or if it was plaited,69,True,True
+Imagination,imagination,Perhaps it was hanging loose over her shoulders,70,True,True
+Imagination,imagination,Or was it cut very short,71,True,True
+Imagination,imagination,There was some confusion in the doorway,80,True,True
+Imagination,imagination,"A man, getting into the compartment, stammered an apology",81,True,True
+Imagination,imagination,Then the door banged and the world was shut out again,82,True,True
+Imagination,imagination,I returned to my berth,83,True,True
+Imagination,imagination,The guard blew his whistle and we moved off,84,True,True
+Imagination,imagination,Once again I had a game to play and a new fellow traveller,85,True,True
+Imagination,imagination,"The train gathered speed, the wheels took up their song, the carriage groaned and shook",86,True,True
+Imagination,imagination,"I found the window and sat in front of it, staring into the daylight that was darkness for me",87,True,True
+Imagination,imagination,So many things were happening outside the window,88,True,True
+Imagination,imagination,It could be a fascinating game guessing what went on out there,89,True,True
+Imagination,imagination,The man who had entered the compartment broke into my reverie,90,True,True
+Imagination,imagination,‘You must be disappointed’ he said,91,True,True
+Imagination,imagination,"‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",92,False,False
+Imagination,imagination,‘She was an interesting girl’ I said,93,True,True
+Imagination,imagination,"‘Can you tell me—did she keep her hair long or short’, he asked",94,False,False
+Imagination,imagination,"‘I don’t remember’, he said sounding puzzled",95,False,False
+Imagination,imagination,"‘It was her eyes I noticed, not her hair', he said",96,False,False
+Imagination,imagination,She had beautiful eyes but they were of no use to her,97,True,True
+Imagination,imagination,She was completely blind,98,True,True
+Imagination,imagination,Didn’t you notice,99,True,True

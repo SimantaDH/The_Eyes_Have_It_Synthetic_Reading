@@ -1,0 +1,27 @@
+LLM EXTRACTION — VERIFICATION AGAINST THE STORY
+Items extracted: 118
+Found verbatim in the story: 101 (85.6%)
+Found in the sentence the model named: 98 (83.1%)
+Only verbatim items are used in the analysis (Fig. 8). Items marked x are not in the story as written.
+
+## Sight: 53 items, 48 verbatim, 47 in the named sentence
+   x ‘Where are you going? ’ she asked
+   x ‘I’m not nearly as attractive a travelling companion as the one who just left’, he said
+   x ‘Can you tell me—did she keep her hair long or short’, he asked
+   x ‘I don’t remember’, he said sounding puzzled
+   x ‘It was her eyes I noticed, not her hair', he said
+## Senses: 13 items, 11 verbatim, 10 in the named sentence
+   x ‘What is it like outside?',
+   x sentence: 36}
+## Performance: 24 items, 18 verbatim, 17 in the named sentence
+   x ‘Where are you going? ’ she asked
+   x ‘To Dehra and then to Mussoorie’, 'Yes, this is the best time,” I said, calling on my memories
+   x ‘I’m not nearly as attractive a travelling companion as the one who just left’, he said
+   x ‘Can you tell me—did she keep her hair long or short’, he asked
+   x ‘I don’t remember’, he said sounding puzzled
+   x ‘It was her eyes I noticed, not her hair', he said
+## Imagination: 28 items, 24 verbatim, 24 in the named sentence
+   x ‘I’m not nearly as attractive a travelling companion as the one who just left’, he said
+   x ‘Can you tell me—did she keep her hair long or short’, he asked
+   x ‘I don’t remember’, he said sounding puzzled
+   x ‘It was her eyes I noticed, not her hair', he said

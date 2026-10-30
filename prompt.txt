@@ -1,0 +1,27 @@
+PROMPT
+
+Prompt to the local LLM (run through Ollama; the model, settings, date and a SHA-256 hash of this prompt are recorded in llm_run_log.json). The story follows the prompt as numbered sentences, [1] to [99].
+
+You are assisting a literary researcher. The text below is Ruskin Bond's short story "The Eyes Have It", given as numbered sentences.
+
+To operationalize the analysis of how the story distributes knowledge between sight and the other senses, and how it stages sight as a social performance, extract from the entire text all lexical items and short multi-word expressions that function semantically within four analytically distinct but interrelated dimensions:
+
+(a) sight — seeing, looking, noticing, eyes, blindness, light and darkness, and appearance (looks, face, beauty);
+(b) other_senses — hearing (sounds, voices, noises), touch, smell and bodily sensation, through which a character perceives people and surroundings;
+(c) performance — concealment and display: pretending, hiding or discovering blindness, games, mistakes, flattery, daring, politeness and other social scripts;
+(d) imagination — memory, inference, guessing, wondering and fancy, including scenes pictured in the mind rather than perceived.
+
+Extraction rules:
+1. Be exhaustive rather than selective; cover every numbered sentence without privileging any section of the story.
+2. Copy each item exactly as it appears in the text (same words, same order), between 1 and 8 words long. Do not paraphrase, summarise or invent items.
+3. An item may belong to more than one dimension; list it under each dimension it serves.
+4. For every item give the number of the sentence in which it occurs.
+5. Do not interpret or comment. Return only the JSON.
+
+Return JSON with exactly this schema:
+{
+  "sight":        [ {"item": "<exact words>", "sentence": <number>} ],
+  "other_senses": [ {"item": "<exact words>", "sentence": <number>} ],
+  "performance":  [ {"item": "<exact words>", "sentence": <number>} ],
+  "imagination":  [ {"item": "<exact words>", "sentence": <number>} ]
+}

@@ -1,0 +1,602 @@
+{
+  "meta": {
+    "title": "The Eyes Have It",
+    "author": "Ruskin Bond",
+    "sentences": 99,
+    "segments": 10,
+    "lexicon_items": 95,
+    "hits": 98,
+    "items_not_found": [],
+    "generated_at": "2026-10-30T19:30:16"
+  },
+  "corpus": {
+    "title": "The Eyes Have It",
+    "author": "Ruskin Bond",
+    "source": "https://gauravsk98.wordpress.com/2018/02/14/the-eyes-have-it-by-ruskin-bond/",
+    "prepared_at": "2026-10-30T19:15:36",
+    "paragraphs": 40,
+    "words": 1130,
+    "corpus_sha256": "375813bd45f1877460407da395735933da48d6bf42e8da9d53a1c6929abbceb4",
+    "noise_removed": {
+      "image_lines_removed": [],
+      "lines_before_story": 0,
+      "lines_after_story": 7
+    },
+    "quotation_mark_issues_not_corrected": [
+      "‘Are you going all the way to Dehra? I asked.",
+      "I must have been sitting in a dark corner because my voice s…",
+      "I didn’t see you either,’ I said. ‘But I heard you come in.’",
+      "I wondered if I would be able to prevent her from discoverin…",
+      "‘I don’t remember,’ he said sounding puzzled. ‘It was her ey…"
+    ],
+    "note": "The story is in copyright; the corpus is not redistributed. Recreate it with prepare_corpus.py and compare corpus_sha256."
+  },
+  "partial_reading": {
+    "text": "The Eyes Have It",
+    "author": "Ruskin Bond",
+    "total_sentences": 99,
+    "parts": 3,
+    "fraction_per_part": 0.2,
+    "seed": 42,
+    "selection": [
+      {
+        "part": 1,
+        "name": "Beginning",
+        "sentences": [
+          1,
+          33
+        ],
+        "strategy": "first",
+        "lines_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "part": 2,
+        "name": "Middle",
+        "sentences": [
+          34,
+          66
+        ],
+        "strategy": "random",
+        "lines_read": [
+          35,
+          38,
+          41,
+          42,
+          57,
+          62,
+          66
+        ]
+      },
+      {
+        "part": 3,
+        "name": "End",
+        "sentences": [
+          67,
+          99
+        ],
+        "strategy": "last",
+        "lines_read": [
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99
+        ]
+      }
+    ],
+    "lines_read_total": 21
+  },
+  "stages": {
+    "I": "Encounter / Concealment",
+    "II": "Performance of Sight",
+    "III": "Departure / Revelation"
+  },
+  "dimensions": {
+    "Sight": "SIGHT",
+    "Senses": "OTHER SENSES",
+    "Performance": "PERFORMANCE",
+    "Imagination": "IMAGINATION"
+  },
+  "stage_sentences": {
+    "I": [
+      1,
+      35
+    ],
+    "II": [
+      36,
+      67
+    ],
+    "III": [
+      68,
+      99
+    ]
+  },
+  "segment_ranges": [
+    [
+      1,
+      10
+    ],
+    [
+      11,
+      20
+    ],
+    [
+      21,
+      30
+    ],
+    [
+      31,
+      40
+    ],
+    [
+      41,
+      50
+    ],
+    [
+      51,
+      60
+    ],
+    [
+      61,
+      70
+    ],
+    [
+      71,
+      80
+    ],
+    [
+      81,
+      90
+    ],
+    [
+      91,
+      99
+    ]
+  ],
+  "theme_counts": {
+    "Stage_I_Sight": [
+      5,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_I_Senses": [
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_I_Performance": [
+      0,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_I_Imagination": [
+      1,
+      1,
+      4,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_II_Sight": [
+      0,
+      0,
+      0,
+      3,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_II_Senses": [
+      0,
+      0,
+      0,
+      0,
+      4,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    "Stage_II_Performance": [
+      0,
+      0,
+      0,
+      0,
+      4,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    "Stage_II_Imagination": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      1,
+      3,
+      0,
+      0,
+      0
+    ],
+    "Stage_III_Sight": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      5
+    ],
+    "Stage_III_Senses": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      5,
+      4,
+      0
+    ],
+    "Stage_III_Performance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      2
+    ],
+    "Stage_III_Imagination": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      2,
+      1
+    ]
+  },
+  "theme_sizes": {
+    "Stage_I_Sight": 10,
+    "Stage_I_Senses": 7,
+    "Stage_I_Performance": 6,
+    "Stage_I_Imagination": 8,
+    "Stage_II_Sight": 8,
+    "Stage_II_Senses": 7,
+    "Stage_II_Performance": 10,
+    "Stage_II_Imagination": 7,
+    "Stage_III_Sight": 9,
+    "Stage_III_Senses": 11,
+    "Stage_III_Performance": 5,
+    "Stage_III_Imagination": 7
+  },
+  "stage_counts": {
+    "I": [
+      10,
+      11,
+      6,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "II": [
+      0,
+      0,
+      0,
+      3,
+      15,
+      12,
+      5,
+      0,
+      0,
+      0
+    ],
+    "III": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      7,
+      13,
+      8
+    ]
+  },
+  "dimension_counts": {
+    "Sight": [
+      5,
+      5,
+      0,
+      3,
+      4,
+      4,
+      0,
+      0,
+      4,
+      5
+    ],
+    "Senses": [
+      4,
+      3,
+      0,
+      0,
+      4,
+      1,
+      4,
+      5,
+      4,
+      0
+    ],
+    "Performance": [
+      0,
+      2,
+      2,
+      2,
+      4,
+      6,
+      0,
+      0,
+      3,
+      2
+    ],
+    "Imagination": [
+      1,
+      1,
+      4,
+      2,
+      3,
+      1,
+      5,
+      2,
+      2,
+      1
+    ]
+  },
+  "dominant_stage": [
+    "I",
+    "I",
+    "I",
+    "I",
+    "II",
+    "II",
+    "II",
+    "III",
+    "III",
+    "III"
+  ],
+  "senses_minus_sight": [
+    -1,
+    -2,
+    0,
+    -3,
+    0,
+    -3,
+    4,
+    5,
+    0,
+    -5
+  ],
+  "llm": {
+    "available": true,
+    "run": {
+      "model": "qwen2.5:7b",
+      "engine": "Ollama on a local GPU",
+      "chunks": 3,
+      "chunk_ranges": [
+        [
+          1,
+          33
+        ],
+        [
+          34,
+          66
+        ],
+        [
+          67,
+          99
+        ]
+      ],
+      "temperature": 0.0,
+      "seed": 42,
+      "num_ctx": 8192,
+      "num_predict": 4096,
+      "run_at": "2026-10-30T19:21:47",
+      "prompt_sha256": "e0feeae8b44052c989911ea6fa868c78cef9b39b7f0f1c89c0a888948cf2f224"
+    },
+    "verification": {
+      "items": 118,
+      "verbatim": 101,
+      "in_named_sentence": 98,
+      "verbatim_pct": 85.6,
+      "in_sentence_pct": 83.1,
+      "unique_verified_items": 98,
+      "per_dimension": {
+        "Sight": {
+          "items": 53,
+          "verbatim": 48,
+          "in_sentence": 47
+        },
+        "Senses": {
+          "items": 13,
+          "verbatim": 11,
+          "in_sentence": 10
+        },
+        "Performance": {
+          "items": 24,
+          "verbatim": 18,
+          "in_sentence": 17
+        },
+        "Imagination": {
+          "items": 28,
+          "verbatim": 24,
+          "in_sentence": 24
+        }
+      }
+    },
+    "dimension_counts": {
+      "Sight": [
+        3,
+        2,
+        0,
+        2,
+        5,
+        5,
+        5,
+        10,
+        10,
+        5
+      ],
+      "Senses": [
+        3,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Performance": [
+        1,
+        2,
+        3,
+        1,
+        0,
+        0,
+        0,
+        4,
+        1,
+        5
+      ],
+      "Imagination": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        10,
+        5
+      ]
+    },
+    "agreement_r": {
+      "Sight": -0.08,
+      "Senses": 0.0,
+      "Performance": -0.35,
+      "Imagination": -0.1
+    },
+    "overall_r": -0.03,
+    "lexicon_coverage": {
+      "lexicon_phrases": 95,
+      "exact": 7,
+      "partial": 53,
+      "covered_pct": 63.2
+    },
+    "paragraph": "**LLM replication (Fig. 8).** The local model (qwen2.5:7b, run through Ollama on a local GPU, in 3 chunks) extracted 118 phrases. 85.6% occur verbatim in the story, and 83.1% occur in the sentence the model named. Counted across the same 10 segments, the verified extraction reproduces the lexicon's distribution only weakly, so the counts above depend on the researcher's lexicon and should be read with that caution (overall r = -0.03; sight -0.08, other senses 0.00, performance -0.35, imagination -0.10). The model also extracted 60 of the 95 lexicon phrases (63.2%), either exactly or as a longer or shorter phrase (`lexicon_llm_overlap.csv`)."
+  },
+  "figures": [
+    {
+      "file": "fig1_heatmap",
+      "title": "Fig. 1 — Frequency of each theme across the narrative segments"
+    },
+    {
+      "file": "fig2_bubble_all_themes",
+      "title": "Fig. 2 — Thematic distribution across the narrative (bubble size = frequency)"
+    },
+    {
+      "file": "fig3a_bubble_stage_I",
+      "title": "Fig. 3a — Stage I: Encounter / Concealment"
+    },
+    {
+      "file": "fig3b_bubble_stage_II",
+      "title": "Fig. 3b — Stage II: Performance of Sight"
+    },
+    {
+      "file": "fig3c_bubble_stage_III",
+      "title": "Fig. 3c — Stage III: Departure / Revelation"
+    },
+    {
+      "file": "fig4_stage_share",
+      "title": "Fig. 4 — Which stage's vocabulary dominates each segment?"
+    },
+    {
+      "file": "fig5_dominant_stage_timeline",
+      "title": "Fig. 5 — Dominant stage per segment"
+    },
+    {
+      "file": "fig6_dimensions_by_segment",
+      "title": "Fig. 6 — Each dimension across the narrative (independent of the stages)"
+    },
+    {
+      "file": "fig7_senses_vs_sight",
+      "title": "Fig. 7 — Where knowledge comes from: other senses minus sight, per segment"
+    },
+    {
+      "file": "fig8_llm_replication",
+      "title": "Fig. 8 — Replication: researcher lexicon vs verified LLM extraction"
+    }
+  ]
+}

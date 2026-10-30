@@ -1,0 +1,482 @@
+{
+  "sight": [
+    {
+      "item": "I had the train compartment to myself up to Rohana",
+      "sentence": 1
+    },
+    {
+      "item": "my eyes sensitive only to light and darkness",
+      "sentence": 5
+    },
+    {
+      "item": "I was unable to tell what the girl looked like",
+      "sentence": 5
+    },
+    {
+      "item": "I didn’t see you either",
+      "sentence": 15
+    },
+    {
+      "item": "I didn’t see you either",
+      "sentence": 17
+    },
+    {
+      "item": "The girl said, I am getting off at Saharanpur",
+      "sentence": 19
+    },
+    {
+      "item": "‘Where are you going? ’ she asked",
+      "sentence": 23
+    },
+    {
+      "item": "I wondered if my words had touched her or whether she thought me a romantic fool.",
+      "sentence": 34
+    },
+    {
+      "item": "Had she noticed already that I could not see?",
+      "sentence": 38
+    },
+    {
+      "item": "I moved easily along the berth and felt for the window ledge.",
+      "sentence": 41
+    },
+    {
+      "item": "I heard the panting of the engine, the rumble of the wheels, and, in my mind’s eye I could see telegraph posts flashing by.",
+      "sentence": 43
+    },
+    {
+      "item": "I knew that there were hardly any animals left in the forests near Dehra.",
+      "sentence": 48
+    },
+    {
+      "item": "I turned from the window and faced the girl and for a while we sat in silence.",
+      "sentence": 49
+    },
+    {
+      "item": "‘You have an interesting face,’ I remarked.",
+      "sentence": 50
+    },
+    {
+      "item": "I was becoming quite daring but it was a safe remark.",
+      "sentence": 51
+    },
+    {
+      "item": "Few girls can resist flattery.",
+      "sentence": 52
+    },
+    {
+      "item": "She laughed pleasantly—a clear, ringing laugh.",
+      "sentence": 53
+    },
+    {
+      "item": "‘It’s nice to be told I have an interesting face.",
+      "sentence": 54
+    },
+    {
+      "item": "‘You are a very gallant young man,’ she said.",
+      "sentence": 58
+    },
+    {
+      "item": "‘We’ll soon be at your station,’ I said.",
+      "sentence": 61
+    },
+    {
+      "item": "‘Thank goodness it’s a short journey.",
+      "sentence": 62
+    },
+    {
+      "item": "it would stay with me for the rest of the journey and for some time after",
+      "sentence": 67
+    },
+    {
+      "item": "I wondered if she wore her hair in a bun or if it was plaited",
+      "sentence": 69
+    },
+    {
+      "item": "Perhaps it was hanging loose over her shoulders",
+      "sentence": 70
+    },
+    {
+      "item": "Or was it cut very short",
+      "sentence": 71
+    },
+    {
+      "item": "The train drew slowly into the station",
+      "sentence": 72
+    },
+    {
+      "item": "Outside, there was the shouting of porters and vendors and a high-pitched female voice near the carriage door",
+      "sentence": 73
+    },
+    {
+      "item": "That voice must have belonged to the girl’s aunt",
+      "sentence": 74
+    },
+    {
+      "item": "‘Goodbye,’ the girl said",
+      "sentence": 75
+    },
+    {
+      "item": "She was standing very close to me",
+      "sentence": 76
+    },
+    {
+      "item": "So close that the perfume from her hair was tantalizing",
+      "sentence": 77
+    },
+    {
+      "item": "I wanted to raise my hand and touch her hair but she moved away",
+      "sentence": 78
+    },
+    {
+      "item": "Only the scent of perfume still lingered where she had stood",
+      "sentence": 79
+    },
+    {
+      "item": "There was some confusion in the doorway",
+      "sentence": 80
+    },
+    {
+      "item": "A man, getting into the compartment, stammered an apology",
+      "sentence": 81
+    },
+    {
+      "item": "Then the door banged and the world was shut out again",
+      "sentence": 82
+    },
+    {
+      "item": "I returned to my berth",
+      "sentence": 83
+    },
+    {
+      "item": "The guard blew his whistle and we moved off",
+      "sentence": 84
+    },
+    {
+      "item": "Once again I had a game to play and a new fellow traveller",
+      "sentence": 85
+    },
+    {
+      "item": "The train gathered speed, the wheels took up their song, the carriage groaned and shook",
+      "sentence": 86
+    },
+    {
+      "item": "I found the window and sat in front of it, staring into the daylight that was darkness for me",
+      "sentence": 87
+    },
+    {
+      "item": "So many things were happening outside the window",
+      "sentence": 88
+    },
+    {
+      "item": "It could be a fascinating game guessing what went on out there",
+      "sentence": 89
+    },
+    {
+      "item": "The man who had entered the compartment broke into my reverie",
+      "sentence": 90
+    },
+    {
+      "item": "‘You must be disappointed’ he said",
+      "sentence": 91
+    },
+    {
+      "item": "‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",
+      "sentence": 92
+    },
+    {
+      "item": "‘She was an interesting girl’ I said",
+      "sentence": 93
+    },
+    {
+      "item": "‘Can you tell me—did she keep her hair long or short’, he asked",
+      "sentence": 94
+    },
+    {
+      "item": "‘I don’t remember’, he said sounding puzzled",
+      "sentence": 95
+    },
+    {
+      "item": "‘It was her eyes I noticed, not her hair', he said",
+      "sentence": 96
+    },
+    {
+      "item": "She had beautiful eyes but they were of no use to her",
+      "sentence": 97
+    },
+    {
+      "item": "She was completely blind",
+      "sentence": 98
+    },
+    {
+      "item": "Didn’t you notice",
+      "sentence": 99
+    }
+  ],
+  "other_senses": [
+    {
+      "item": "They seemed very anxious about her comfort and the woman gave the girl detailed instructions as to where to keep her things, when not to lean out of windows, and how to avoid speaking to strangers",
+      "sentence": 3
+    },
+    {
+      "item": "I knew she wore slippers from the way they slapped against her heels",
+      "sentence": 6
+    },
+    {
+      "item": "I must have been sitting in a dark corner because my voice startled her",
+      "sentence": 10
+    },
+    {
+      "item": "I heard you come in",
+      "sentence": 16
+    },
+    {
+      "item": "I love the hills",
+      "sentence": 27
+    },
+    {
+      "item": "I wish I were going to Mussoorie",
+      "sentence": 26
+    },
+    {
+      "item": "I love the hills",
+      "sentence": 28
+    },
+    {
+      "item": "‘What is it like outside?',",
+      "sentence": null
+    },
+    {
+      "item": "sentence: 36}",
+      "sentence": null
+    },
+    {
+      "item": "the shouting of porters and vendors",
+      "sentence": 73
+    },
+    {
+      "item": "a high-pitched female voice",
+      "sentence": 73
+    },
+    {
+      "item": "the perfume from her hair",
+      "sentence": 77
+    },
+    {
+      "item": "the scent of perfume",
+      "sentence": 79
+    }
+  ],
+  "performance": [
+    {
+      "item": "They called their goodbyes and the train pulled out of the station",
+      "sentence": 4
+    },
+    {
+      "item": "I didn’t see you either",
+      "sentence": 15
+    },
+    {
+      "item": "I didn’t see you either",
+      "sentence": 17
+    },
+    {
+      "item": "Provided I keep to my seat, I thought, it shouldn’t be too difficult",
+      "sentence": 18
+    },
+    {
+      "item": "I had better not get too familiar",
+      "sentence": 21
+    },
+    {
+      "item": "Aunts are usually formidable creatures",
+      "sentence": 22
+    },
+    {
+      "item": "‘Where are you going? ’ she asked",
+      "sentence": 23
+    },
+    {
+      "item": "‘To Dehra and then to Mussoorie’, 'Yes, this is the best time,” I said, calling on my memories",
+      "sentence": 24
+    },
+    {
+      "item": "‘The hills are covered with wild dahlias, the sun is delicious, and at night you can sit in front of a log fire and drink a little brandy",
+      "sentence": 30
+    },
+    {
+      "item": "Most of the tourists have gone and the roads are quiet and almost deserted",
+      "sentence": 31
+    },
+    {
+      "item": "‘Goodbye,’ the girl said",
+      "sentence": 75
+    },
+    {
+      "item": "She was standing very close to me",
+      "sentence": 76
+    },
+    {
+      "item": "I wanted to raise my hand and touch her hair but she moved away",
+      "sentence": 78
+    },
+    {
+      "item": "Only the scent of perfume still lingered where she had stood",
+      "sentence": 79
+    },
+    {
+      "item": "A man, getting into the compartment, stammered an apology",
+      "sentence": 81
+    },
+    {
+      "item": "‘You must be disappointed’ he said",
+      "sentence": 91
+    },
+    {
+      "item": "‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",
+      "sentence": 92
+    },
+    {
+      "item": "‘She was an interesting girl’ I said",
+      "sentence": 93
+    },
+    {
+      "item": "‘Can you tell me—did she keep her hair long or short’, he asked",
+      "sentence": 94
+    },
+    {
+      "item": "‘I don’t remember’, he said sounding puzzled",
+      "sentence": 95
+    },
+    {
+      "item": "‘It was her eyes I noticed, not her hair', he said",
+      "sentence": 96
+    },
+    {
+      "item": "She had beautiful eyes but they were of no use to her",
+      "sentence": 97
+    },
+    {
+      "item": "She was completely blind",
+      "sentence": 98
+    },
+    {
+      "item": "Didn’t you notice",
+      "sentence": 99
+    }
+  ],
+  "imagination": [
+    {
+      "item": "I must have been sitting in a dark corner because my voice startled her",
+      "sentence": 10
+    },
+    {
+      "item": "I wondered if I would be able to prevent her from discovering that I was blind",
+      "sentence": 17
+    },
+    {
+      "item": "‘The hills are covered with wild dahlias, the sun is delicious, and at night you can sit in front of a log fire and drink a little brandy",
+      "sentence": 30
+    },
+    {
+      "item": "Most of the tourists have gone and the roads are quiet and almost deserted",
+      "sentence": 31
+    },
+    {
+      "item": "Yes, October is the best time",
+      "sentence": 32
+    },
+    {
+      "item": "I wondered if she wore her hair in a bun or if it was plaited",
+      "sentence": 69
+    },
+    {
+      "item": "Perhaps it was hanging loose over her shoulders",
+      "sentence": 70
+    },
+    {
+      "item": "Or was it cut very short",
+      "sentence": 71
+    },
+    {
+      "item": "There was some confusion in the doorway",
+      "sentence": 80
+    },
+    {
+      "item": "A man, getting into the compartment, stammered an apology",
+      "sentence": 81
+    },
+    {
+      "item": "Then the door banged and the world was shut out again",
+      "sentence": 82
+    },
+    {
+      "item": "I returned to my berth",
+      "sentence": 83
+    },
+    {
+      "item": "The guard blew his whistle and we moved off",
+      "sentence": 84
+    },
+    {
+      "item": "Once again I had a game to play and a new fellow traveller",
+      "sentence": 85
+    },
+    {
+      "item": "The train gathered speed, the wheels took up their song, the carriage groaned and shook",
+      "sentence": 86
+    },
+    {
+      "item": "I found the window and sat in front of it, staring into the daylight that was darkness for me",
+      "sentence": 87
+    },
+    {
+      "item": "So many things were happening outside the window",
+      "sentence": 88
+    },
+    {
+      "item": "It could be a fascinating game guessing what went on out there",
+      "sentence": 89
+    },
+    {
+      "item": "The man who had entered the compartment broke into my reverie",
+      "sentence": 90
+    },
+    {
+      "item": "‘You must be disappointed’ he said",
+      "sentence": 91
+    },
+    {
+      "item": "‘I’m not nearly as attractive a travelling companion as the one who just left’, he said",
+      "sentence": 92
+    },
+    {
+      "item": "‘She was an interesting girl’ I said",
+      "sentence": 93
+    },
+    {
+      "item": "‘Can you tell me—did she keep her hair long or short’, he asked",
+      "sentence": 94
+    },
+    {
+      "item": "‘I don’t remember’, he said sounding puzzled",
+      "sentence": 95
+    },
+    {
+      "item": "‘It was her eyes I noticed, not her hair', he said",
+      "sentence": 96
+    },
+    {
+      "item": "She had beautiful eyes but they were of no use to her",
+      "sentence": 97
+    },
+    {
+      "item": "She was completely blind",
+      "sentence": 98
+    },
+    {
+      "item": "Didn’t you notice",
+      "sentence": 99
+    }
+  ]
+}

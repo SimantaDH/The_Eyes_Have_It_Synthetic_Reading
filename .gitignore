@@ -1,0 +1,9 @@
+# Copyrighted text: never pushed (see README, 'Copyright')
+source_the_eyes_have_it.*
+corpus_the_eyes_have_it.txt
+partial_reading.txt
+# Runtime files
+__pycache__/
+.ipynb_checkpoints/
+ollama.log
+*.zip
